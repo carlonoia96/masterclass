@@ -45,7 +45,7 @@ class App extends React.Component<{}, AppState> {
     return (<>
       <div className={'container'}>
         <Routes>
-          <Route path="/" element={<Home setCurrentRoute={this.setCurrentRoute}/>}/>
+          <Route path="/landing/masterclass/" element={<Home setCurrentRoute={this.setCurrentRoute}/>}/>
           {/*<Route path="/*" element={<Page404/>}/>*/}
         </Routes>
       </div>

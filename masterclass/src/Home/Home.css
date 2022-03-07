@@ -1,0 +1,133 @@
+.default-block-size{
+    height: calc(100vh);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-viewed{
+    background-image: url("../Assets/images/sfondoHome.svg");
+}
+
+.first-viewed .title{
+    font-size: 144px;
+    color: white;
+    text-shadow: -6px 5px #c6c6c6;
+    line-height: 140px;
+}
+
+.first-viewed .title.red{
+    color: #ff1616;
+}
+
+.check{
+    background-image: url("../Assets/images/sfondoCheck.svg");
+    flex-direction: column;
+}
+
+.check .title{
+    color: #545454;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.check .rowsContainer{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.check .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.check .col1{
+    flex: 1;
+}
+
+.check .col2{
+    flex: 6;
+}
+
+.check .image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+}
+
+.check .image.red{
+    background-image: url("../Assets/images/checkRosso.svg");
+}
+.check .image.gray{
+    background-image: url("../Assets/images/checkGrigio.svg");
+}
+
+.idm{
+    background-image: url("../Assets/images/sfondoIDM.webp");
+}
+
+.idm .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 18%;
+}
+
+.idm .textContainer{
+    background-color: white;
+    border-radius: 30px;
+    width: 37%;
+    font-size: 24px;
+    padding: 28px;
+}
+
+.idm .text-center p {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.idm .btn{
+    font-size: 26px;
+    background-color: #545454;
+    width: 23%;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 6px #a6a6a6;
+    margin-top: -30px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.grassetto{
+    font-weight: bold;
+}
+
+.no-margin,
+.no-margin p{
+    margin: 0;
+}
+
+.color-red{
+    color: #ff1616;
+}
+
+.white{
+    color: white;
+}
