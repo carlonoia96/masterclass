@@ -92,17 +92,33 @@ class Home extends React.Component<HomeProps> {
                             className={"color-red"}>professionalità</span>.
                         </p>
                         <p>
-                            IDM ti consentirà di <span className={"grassetto"}>imparare</span> tutto quello che si cela dietro ad un vero progetto di
+                            IDM ti consentirà di <span className={"grassetto"}>imparare</span> tutto quello che si cela
+                            dietro ad un vero progetto di
                             Interior Design per arredare nel miglior dei modi tutti gli spazi interni fruiti dall'uomo.
                         </p>
                         <p>
-                            Cosa aspetti <span className={"color-red grassetto"}>entra a far parte della classe ora!</span>
+                            Cosa aspetti <span
+                            className={"color-red grassetto"}>entra a far parte della classe ora!</span>
                         </p>
                     </div>
                     <div className={"btn no-margin"}>
                         <p className={"white grassetto"}>
                             ISCRIVITI
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div className={"faPerTe"}>
+                <p className={"title default-block-size"}>
+                    FA PER TE SE SEI (O ASPIRI A DIVENTARE):
+                </p>
+                <div className={"container"}>
+                    <div className={"block"}>
+                        <p>
+                            INTERIOR<br/>
+                            DESIGNER
+                        </p>
+                        <div className={"image"}/>
                     </div>
                 </div>
             </div>
