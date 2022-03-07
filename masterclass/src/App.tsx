@@ -1,26 +1,56 @@
 import React from 'react';
 import logo from './logo.svg';
+import {Routes, Route} from 'react-router-dom';
 import './App.css';
+import Home from './Home/Home';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const FADE = {
+  IN: 'animate__slideInDown',
+  OUT: 'animate__slideOutUp'
+}
+
+interface AppState {
+  isMenuOpen: boolean;
+  fade?: string;
+  currentRoute: string;
+}
+
+class App extends React.Component<{}, AppState> {
+  constructor(props: any) {
+    super(props);
+    this.state = {isMenuOpen: false, currentRoute: 'Home'};
+  }
+
+  toggleMenu = () => {
+    if (this.state.isMenuOpen) {
+      this.setState({
+        fade: FADE.OUT
+      });
+      setTimeout(() => {
+        this.setState({isMenuOpen: !this.state.isMenuOpen});
+      }, 400)
+    } else {
+      this.setState({
+        isMenuOpen: !this.state.isMenuOpen,
+        fade: FADE.IN
+      });
+    }
+  }
+
+  setCurrentRoute = (currentRoute: string) => {
+    this.setState({currentRoute});
+  }
+
+  render() {
+    return (<>
+      <div className={'container'}>
+        <Routes>
+          <Route path="/" element={<Home setCurrentRoute={this.setCurrentRoute}/>}/>
+          {/*<Route path="/*" element={<Page404/>}/>*/}
+        </Routes>
+      </div>
+    </>);
+  }
 }
 
 export default App;
