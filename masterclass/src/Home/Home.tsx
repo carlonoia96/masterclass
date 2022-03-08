@@ -152,7 +152,7 @@ class Home extends React.Component<{}, HomeProps> {
                             <p className={"text"} style={this.blockStyle(block)}>
                                 {this.showBlockText(block)}
                             </p>
-                            <div className={"image"}/>
+                            {/*<div className={"image"}/>*/}
                         </div>
                     ))}
 
