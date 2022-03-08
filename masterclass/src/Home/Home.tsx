@@ -157,6 +157,7 @@ class Home extends React.Component<{}, HomeProps> {
                     </div>
                 </div>
             </div>
+
             <div className={"faPerTe default-block-size"}>
                 <p className={"title"}>
                     FA PER TE SE SEI (O ASPIRI A DIVENTARE):

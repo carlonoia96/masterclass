@@ -118,7 +118,7 @@
 
 .faPerTe {
     height: unset !important;
-    min-height: 100vh;
+    min-height: 120vh;
 }
 
 .faPerTe .title {
@@ -164,6 +164,7 @@
 
 .moduli {
     flex-direction: column;
+    height: 120vh;
 }
 
 .moduli .title {
