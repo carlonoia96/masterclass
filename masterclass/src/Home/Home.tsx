@@ -1,11 +1,58 @@
 import React, {FC} from 'react';
 import './Home.css';
+import blocks from "./blocks.json";
+
 
 interface HomeProps {
-    setCurrentRoute: (menu: string) => void;
+    blocks: any
 }
 
-class Home extends React.Component<HomeProps> {
+class Home extends React.Component<{}, HomeProps> {
+
+    constructor(props: any) {
+        super(props);
+        this.state = {blocks: blocks}
+    }
+
+    clickBlock(block: any) {
+/*
+        const bk = this.state.blocks;
+        const blockFind = (bk as any[]).find(b => b.title == block.title);
+
+ */
+
+        if (!block.open) {
+            block.open = true;
+        } else {
+            block.open = false;
+        }
+
+        this.setState({})
+/*
+        this.setState({
+            blocks: bk
+        })
+
+ */
+
+    }
+
+    blockStyle(block: any) {
+        if (block.open) {
+            return {fontSize: "18px"}
+        } else {
+            return {fontSize: "32px"}
+        }
+    }
+
+    showBlockText(block: any) {
+        if (block.open) {
+            return block.description
+        } else {
+            return block.title
+        }
+    }
+
     render() {
         return (<>
             <div className={"first-viewed default-block-size"}>
@@ -108,18 +155,21 @@ class Home extends React.Component<HomeProps> {
                     </div>
                 </div>
             </div>
-            <div className={"faPerTe"}>
-                <p className={"title default-block-size"}>
+            <div className={"faPerTe default-block-size"}>
+                <p className={"title"}>
                     FA PER TE SE SEI (O ASPIRI A DIVENTARE):
                 </p>
                 <div className={"container"}>
-                    <div className={"block"}>
-                        <p>
-                            INTERIOR<br/>
-                            DESIGNER
-                        </p>
-                        <div className={"image"}/>
-                    </div>
+
+                    {this.state.blocks.map((block: any) => (
+                        <div className={"block"} onClick={() => this.clickBlock(block)}>
+                            <p className={"text"} style={this.blockStyle(block)}>
+                                {this.showBlockText(block)}
+                            </p>
+                            <div className={"image"}/>
+                        </div>
+                    ))}
+
                 </div>
             </div>
         </>);

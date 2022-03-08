@@ -111,6 +111,55 @@
     margin-top: -30px;
 }
 
+.faPerTe{
+    flex-direction: column;
+}
+
+.faPerTe{
+    height: unset !important;
+    min-height: 100vh;
+}
+
+.faPerTe .title{
+    color: #545454;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.faPerTe .container{
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.faPerTe .block{
+    background-color: #ff1616;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 30px;
+    position: relative;
+}
+
+.faPerTe .image{
+    background-image: url("../Assets/images/click.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .text-center{
     text-align: center;
 }
