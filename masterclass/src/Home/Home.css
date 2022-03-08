@@ -146,6 +146,7 @@
     font-weight: bold;
     padding: 30px;
     position: relative;
+    cursor: pointer;
 }
 
 .faPerTe .image{

@@ -148,11 +148,11 @@ class Home extends React.Component<{}, HomeProps> {
                 <div className={"container"}>
 
                     {this.state.blocks.map((block: any) => (
-                        <div className={"block"} onClick={() => this.clickBlock(block)}>
+                        <div className={"block"} onMouseEnter={() => this.clickBlock(block)} onMouseLeave={() => this.clickBlock(block)}>
                             <p className={"text"} style={this.blockStyle(block)}>
                                 {this.showBlockText(block)}
                             </p>
-                            <div className={"image"}/>
+                            {/*<div className={"image"}/>*/}
                         </div>
                     ))}
 
