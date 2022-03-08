@@ -15,26 +15,12 @@ class Home extends React.Component<{}, HomeProps> {
     }
 
     clickBlock(block: any) {
-/*
-        const bk = this.state.blocks;
-        const blockFind = (bk as any[]).find(b => b.title == block.title);
-
- */
-
         if (!block.open) {
             block.open = true;
         } else {
             block.open = false;
         }
-
-        this.setState({})
-/*
-        this.setState({
-            blocks: bk
-        })
-
- */
-
+        this.setState({});
     }
 
     blockStyle(block: any) {
