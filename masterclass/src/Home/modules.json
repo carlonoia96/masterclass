@@ -1,0 +1,56 @@
+[
+  {
+    "number": "01",
+    "description": "TEORIA DEL\n COLORE"
+  },
+  {
+    "number": "02",
+    "description": "CONCEPT\nDESIGN ",
+    "scuro": true
+  },
+  {
+    "number": "03",
+    "description": "GESTIONE\nDELLO SPAZIO ",
+    "scuro": true
+  },
+  {
+    "number": "04",
+    "description": "TECNOLOGIA DELLE COSTRUZIONI E DEI MATERIALI "
+  },
+  {
+    "number": "05",
+    "description": "FORNITURE \nDESIGN "
+  },
+  {
+    "number": "06",
+    "description": "LIGHTING \nDESIGN ",
+    "scuro": true
+  },
+  {
+    "number": "07",
+    "description": "DISEGNO TECNICO\nA MANO LIBERA "
+  },
+  {
+    "number": "08",
+    "description": "STORIA DELL'ARREDAMENTO E DEL DESIGN "
+  },
+  {
+    "number": "09",
+    "description": "CONOSCENZA DEI TREND TENDENZE E  MERCATO ",
+    "scuro": true
+  },
+  {
+    "number": "10",
+    "description": "DISEGNO DIGITALE "
+  },
+  {
+    "number": "11",
+    "description": "CAD E TECNICHE \nDI RENDERING",
+    "scuro": true
+  },
+  {
+    "number": "12",
+    "description": "GARDEN \nDESIGN",
+    "scuro": true
+  }
+]

@@ -1,4 +1,4 @@
-.default-block-size{
+.default-block-size {
     height: calc(100vh);
     overflow: hidden;
     background-position: center;
@@ -10,38 +10,38 @@
     justify-content: center;
 }
 
-.first-viewed{
+.first-viewed {
     background-image: url("../Assets/images/sfondoHome.svg");
 }
 
-.first-viewed .title{
+.first-viewed .title {
     font-size: 144px;
     color: white;
     text-shadow: -6px 5px #c6c6c6;
     line-height: 140px;
 }
 
-.first-viewed .title.red{
+.first-viewed .title.red {
     color: #ff1616;
 }
 
-.check{
+.check {
     background-image: url("../Assets/images/sfondoCheck.svg");
     flex-direction: column;
 }
 
-.check .title{
+.check .title {
     color: #545454;
     font-size: 48px;
     font-weight: bold;
 }
 
-.check .rowsContainer{
+.check .rowsContainer {
     padding-left: 10%;
     padding-right: 10%;
 }
 
-.check .row{
+.check .row {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,33 +51,34 @@
     margin-bottom: 15px;
 }
 
-.check .col1{
+.check .col1 {
     flex: 1;
 }
 
-.check .col2{
+.check .col2 {
     flex: 6;
 }
 
-.check .image{
+.check .image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100px;
 }
 
-.check .image.red{
+.check .image.red {
     background-image: url("../Assets/images/checkRosso.svg");
 }
-.check .image.gray{
+
+.check .image.gray {
     background-image: url("../Assets/images/checkGrigio.svg");
 }
 
-.idm{
+.idm {
     background-image: url("../Assets/images/sfondoIDM.webp");
 }
 
-.idm .container{
+.idm .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +86,7 @@
     margin-right: 18%;
 }
 
-.idm .textContainer{
+.idm .textContainer {
     background-color: white;
     border-radius: 30px;
     width: 37%;
@@ -98,7 +99,7 @@
     margin-bottom: 80px;
 }
 
-.idm .btn{
+.idm .btn {
     font-size: 26px;
     background-color: #545454;
     width: 23%;
@@ -111,29 +112,29 @@
     margin-top: -30px;
 }
 
-.faPerTe{
+.faPerTe {
     flex-direction: column;
 }
 
-.faPerTe{
+.faPerTe {
     height: unset !important;
     min-height: 100vh;
 }
 
-.faPerTe .title{
+.faPerTe .title {
     color: #545454;
     font-size: 48px;
     font-weight: bold;
 }
 
-.faPerTe .container{
+.faPerTe .container {
     display: grid;
     grid-template-columns: 370px 370px 370px;
     column-gap: 50px;
     row-gap: 50px;
 }
 
-.faPerTe .block{
+.faPerTe .block {
     background-color: #ff1616;
     height: 300px;
     display: flex;
@@ -149,7 +150,7 @@
     cursor: pointer;
 }
 
-.faPerTe .image{
+.faPerTe .image {
     background-image: url("../Assets/images/click.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -161,23 +162,91 @@
     right: 0;
 }
 
-.text-center{
+.moduli {
+    flex-direction: column;
+}
+
+.moduli .title {
+    color: #545454;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.moduli .block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 24px;
+    width: 390px;
+}
+
+.moduli .image {
+    background-image: url("../Assets/images/bollino.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 140px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 34px;
+}
+
+.moduli .image.scura {
+    background-image: url("../Assets/images/bollinoScuro.webp");
+}
+
+.moduli .container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    grid-auto-flow: column;
+    position: relative;
+    width: 100%;
+}
+
+.moduli .block .image {
+    flex: 1.2;
+}
+
+.moduli .image p {
+    background-color: #545454;
+    color: white;
+    padding-left: 15px;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-left: -12px;
+    letter-spacing: 7px;
+}
+
+.moduli .block .text {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.text-center {
     text-align: center;
 }
 
-.grassetto{
+.grassetto {
     font-weight: bold;
 }
 
 .no-margin,
-.no-margin p{
+.no-margin p {
     margin: 0;
 }
 
-.color-red{
+.color-red {
     color: #ff1616;
 }
 
-.white{
+.white {
     color: white;
 }

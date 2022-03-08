@@ -1,17 +1,22 @@
 import React, {FC} from 'react';
 import './Home.css';
 import blocks from "./blocks.json";
+import modules from "./modules.json"
 
 
 interface HomeProps {
-    blocks: any
+    blocks: any,
+    modules: any
 }
 
 class Home extends React.Component<{}, HomeProps> {
 
     constructor(props: any) {
         super(props);
-        this.state = {blocks: blocks}
+        this.state = {
+            blocks: blocks,
+            modules: modules
+        }
     }
 
     clickBlock(block: any) {
@@ -38,6 +43,17 @@ class Home extends React.Component<{}, HomeProps> {
             return block.title
         }
     }
+
+    checkBackgroundImage(module: any) {
+        if (module.scuro) {
+            return "image scura";
+        } else {
+            return "image"
+        }
+
+    }
+
+
 
     render() {
         return (<>
@@ -148,7 +164,8 @@ class Home extends React.Component<{}, HomeProps> {
                 <div className={"container"}>
 
                     {this.state.blocks.map((block: any) => (
-                        <div className={"block"} onMouseEnter={() => this.clickBlock(block)} onMouseLeave={() => this.clickBlock(block)}>
+                        <div className={"block"} onMouseEnter={() => this.clickBlock(block)}
+                             onMouseLeave={() => this.clickBlock(block)}>
                             <p className={"text"} style={this.blockStyle(block)}>
                                 {this.showBlockText(block)}
                             </p>
@@ -156,6 +173,24 @@ class Home extends React.Component<{}, HomeProps> {
                         </div>
                     ))}
 
+                </div>
+            </div>
+
+            <div className={"moduli default-block-size"}>
+                <p className={"title no-margin"}>
+                    12 MODULI
+                </p>
+                <div className={"container"}>
+                    {this.state.modules.map((module: any) => (
+                        <div className={"block"}>
+                            <div className={this.checkBackgroundImage(module)}>
+                                <p>{module.number}</p>
+                            </div>
+                            <p className={"text"}>
+                                {module.description}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </>);
