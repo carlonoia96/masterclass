@@ -53,14 +53,15 @@ class Home extends React.Component<{}, HomeProps> {
 
     }
 
-
-
     render() {
         return (<>
             <div className={"first-viewed default-block-size"}>
-                <div className={"textContainer text-center grassetto no-margin"}>
-                    <p className={"title"}>INTERIOR<br/> DESIGN</p>
-                    <p className={"title red"} style={{marginTop: "60px"}}>MASTERCLASS</p>
+                <div className={"textContainer text-center no-margin"}>
+                    <p className={"title"}><span className={"color-red"}>I</span>nterior <span className={"color-red"}>D</span>esign</p>
+                    <p className={"title"} style={{marginTop: "60px"}}>
+                        <span className={"color-red"}>M</span>asterclass
+                        <div className={"image"}/>
+                    </p>
                 </div>
             </div>
             <div className={"check default-block-size"}>

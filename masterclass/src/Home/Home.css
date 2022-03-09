@@ -11,18 +11,29 @@
 }
 
 .first-viewed {
-    background-image: url("../Assets/images/sfondoHome.svg");
+    background-image: url("../Assets/images/sfondoHome.webp");
+    font-family: 'code-pro';
 }
 
 .first-viewed .title {
-    font-size: 144px;
+    font-size: 160px;
     color: white;
-    text-shadow: -6px 5px #c6c6c6;
-    line-height: 140px;
+    text-shadow: 6px 5px #c6c6c6;
+    line-height: 85px;
 }
 
 .first-viewed .title.red {
     color: #ff1616;
+}
+
+.first-viewed .image{
+    background-image: url("../Assets/images/iconHome.webp");
+    height: 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    margin-left: 1.1em;
 }
 
 .check {
