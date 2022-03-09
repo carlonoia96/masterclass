@@ -36,6 +36,61 @@
     margin-left: 1.1em;
 }
 
+.slide2{
+    background-image: url("../Assets/images/sfondoSlide2.webp");
+    background-color: #e9e9e9;
+    background-size: contain;
+    flex-direction: column;
+}
+.slide2 .title{
+    font-size: 96px;
+    width: 100%;
+    padding-left: 40%;
+    font-family: code-pro;
+    margin: 0;
+    margin-bottom: 160px;
+    margin-top: -160px;
+}
+
+.slide2 .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.slide2 .col1{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide2 .col2{
+    flex: 1;
+}
+
+.slide2 .textContainer{
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    font-size: 34px;
+    width: 500px;
+    margin-top: -70px;
+}
+
+.slide2 .image{
+    background-image: url("../Assets/images/macRosso.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    width: 50vh;
+    margin-left: 18.3vh;
+}
+
 .check {
     background-image: url("../Assets/images/sfondoCheck.svg");
     flex-direction: column;
@@ -86,7 +141,9 @@
 }
 
 .idm {
-    background-image: url("../Assets/images/sfondoIDM.webp");
+    background-image: url("../Assets/images/sfondoIDM2.webp");
+    height: 115.3vh;
+    background-size: contain;
 }
 
 .idm .container {
@@ -95,6 +152,7 @@
     justify-content: center;
     flex-direction: column;
     margin-right: 18%;
+    margin-top: -20vh;
 }
 
 .idm .textContainer {
@@ -103,6 +161,7 @@
     width: 37%;
     font-size: 24px;
     padding: 28px;
+    margin-left: -20%;
 }
 
 .idm .text-center p {
@@ -121,6 +180,7 @@
     justify-content: center;
     box-shadow: 6px 6px #a6a6a6;
     margin-top: -30px;
+    margin-left: -20%;
 }
 
 .faPerTe {

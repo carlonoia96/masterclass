@@ -57,11 +57,30 @@ class Home extends React.Component<{}, HomeProps> {
         return (<>
             <div className={"first-viewed default-block-size"}>
                 <div className={"textContainer text-center no-margin"}>
-                    <p className={"title"}><span className={"color-red"}>I</span>nterior <span className={"color-red"}>D</span>esign</p>
+                    <p className={"title"}><span className={"color-red"}>I</span>nterior <span
+                        className={"color-red"}>D</span>esign</p>
                     <p className={"title"} style={{marginTop: "60px"}}>
                         <span className={"color-red"}>M</span>asterclass
                         <div className={"image"}/>
                     </p>
+                </div>
+            </div>
+            <div className={"slide2 default-block-size"}>
+                <p className={"title color-red"}>
+                    IDM
+                </p>
+                <div className={"container"}>
+                    <div className={"col1"}>
+                        <div className={"textContainer"}>
+                            <p>
+                                Ti darà l'opportunità di diventare Designer d'interni in soli 12 mesi e con l'esclusivo
+                                vantaggio di fare tutto questo comodamente da casa tua o in qualunque luogo e ora tu voglia.
+                            </p>
+                        </div>
+                    </div>
+                    <div className={"col2"}>
+                        <div className={"image"}/>
+                    </div>
                 </div>
             </div>
             <div className={"check default-block-size"}>
@@ -131,7 +150,7 @@ class Home extends React.Component<{}, HomeProps> {
             <div className={"idm default-block-size"}>
                 <div className={"container"}>
                     <div className={"textContainer text-center"}>
-                        <p className={"color-red grassetto"}>
+                        <p className={"color-red grassetto"} style={{fontSize:"34px"}}>
                             IDM
                         </p>
                         <p>
