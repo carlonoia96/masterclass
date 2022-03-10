@@ -74,7 +74,8 @@ class Home extends React.Component<{}, HomeProps> {
                         <div className={"textContainer"}>
                             <p>
                                 Ti darà l'opportunità di diventare Designer d'interni in soli 12 mesi e con l'esclusivo
-                                vantaggio di fare tutto questo comodamente da casa tua o in qualunque luogo e ora tu voglia.
+                                vantaggio di fare tutto questo comodamente da casa tua o in qualunque luogo e ora tu
+                                voglia.
                             </p>
                         </div>
                     </div>
@@ -150,7 +151,7 @@ class Home extends React.Component<{}, HomeProps> {
             <div className={"idm default-block-size"}>
                 <div className={"container"}>
                     <div className={"textContainer text-center"}>
-                        <p className={"color-red grassetto"} style={{fontSize:"34px"}}>
+                        <p className={"color-red grassetto"} style={{fontSize: "34px"}}>
                             IDM
                         </p>
                         <p>
@@ -196,7 +197,20 @@ class Home extends React.Component<{}, HomeProps> {
 
                 </div>
             </div>
-
+            <div className={"strutturaCorso default-block-size"}>
+                <div className={"textContainer boxWithText"}>
+                    <p className={"no-margin"}>
+                        COM'E' <br/>
+                        STRUTTURATO <br/>
+                        IL CORSO?
+                    </p>
+                    <div className={"btn"}>
+                        <p>
+                            scopri
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div className={"moduli default-block-size"}>
                 <p className={"title no-margin"}>
                     12 MODULI
@@ -212,6 +226,67 @@ class Home extends React.Component<{}, HomeProps> {
                             </p>
                         </div>
                     ))}
+                </div>
+            </div>
+            <div className={"unisciti default-block-size"}>
+                <div className={"textContainer white"}>
+                    <p className={"title"}>
+                        UNISCITI ALLA MASTERCLASS
+                    </p>
+                    <p>
+                        Riserva il tuo posto all'interno della classe ora, senza impegno, per
+                        non perderti l'occasione di accedervi appena apriranno le iscrizioni ufficiali!
+                    </p>
+                    <div className={"btn"}>
+                        <p>
+                            Unisciti Ora
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className={"immagina default-block-size"}>
+                <div className={"row1 title"}>
+                    <p>
+                        Immagina di svegliarti con ...
+                    </p>
+                    <div className={"decoration"}/>
+                </div>
+                <div className={"row2"}>
+                    <div className={"col1"}>
+                        <div className={"image"}/>
+                        <p>
+                            Tantissime nuove
+                            richieste di lavoro
+                        </p>
+                    </div>
+                    <div className={"col2"}>
+                        <div className={"image"}/>
+                        <p>
+                            +10 K
+                            nuovi clienti
+                        </p>
+                    </div>
+                    <div className={"col3"}>
+                        <div className={"image"}/>
+                        <p>
+                            una quantità pazzesca di visualizzazioni sul tuo profilo instagram
+                        </p>
+                    </div>
+
+                </div>
+                <div className={"row3"}>
+                    <p className={"title"}>
+                        TUTTO QUESTO PUO' DAVVERO ACCADERE A TE!
+                    </p>
+                    <p>
+                        Quello di cui hai bisogno?
+                    </p>
+                    <div className={"container"}>
+                        <div className={"image"}/>
+                        <p className={"color-red grassetto"}>
+                            La chiave per sbloccare quel potenziale!
+                        </p>
+                    </div>
                 </div>
             </div>
         </>);
