@@ -697,3 +697,72 @@
     margin-bottom: 0;
     font-size: calc(1px + 0.8vw);
 }
+
+.accessoLimitato {
+    height: max-content;
+    position: relative;
+}
+
+.accessoLimitato > img {
+    height: auto;
+    width: 100%;
+}
+
+.accessoLimitato .container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.accessoLimitato .title{
+    font-family: code-pro;
+    font-size: calc(1px + 4.7vw);
+    text-align: center;
+    text-shadow: 0px 0px 15px red;
+    margin-top: 15%;
+    margin-left: 12%;
+    color: white;
+}
+
+.accessoLimitato .text{
+    color: white;
+    width: 51%;
+    font-size: calc(1px + 1.6vw);
+    text-align: center;
+    margin-top: 8%;
+    margin-left: 30%;
+}
+
+.accessvipUpgradeoLimitato {
+    height: max-content;
+    position: relative;
+}
+
+.vipUpgrade {
+    height: max-content;
+    position: relative;
+}
+
+.vipUpgrade > img {
+    height: auto;
+    width: 100%;
+}
+
+.vipUpgrade .container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.vipUpgrade .textContainer{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 4%;
+    height: 31%;
+    text-align: center;
+    font-size: calc(1px + 3.5vw);
+}

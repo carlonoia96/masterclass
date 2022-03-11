@@ -436,6 +436,40 @@ class Home extends React.Component<{}, HomeProps> {
                     </div>
                 </div>
             </div>
+            <div className={"accessoLimitato default-block-size"}>
+                <img src={require("../Assets/images/accessoLimitato.webp")} alt=""/>
+                <div className={"container"}>
+                    <p className={"title"}>
+                        Accesso limitato <br/>
+                        a 12 mesi
+                    </p>
+                    <p className={"text"}>
+                        <span className={"color-red"}>IDM</span> è pensato per portare le tue <span
+                        className={"grassetto"}>skills al livello successivo</span>.
+                        Così come mi sono impegnata io nella creazione di un corso di Interior Design così completo, ora
+                        mi aspetto da te tante ore dedicate allo studio e quindi per metterti alla prova ho deciso di
+                        darti un <span className={"grassetto"}>tempo</span>, quello <span
+                        className={"grassetto"}>sufficiente</span> per poter davvero diventare un/una designer di
+                        successo!
+                    </p>
+                </div>
+            </div>
+            <div className={"vipUpgrade default-block-size"}>
+                <img src={require("../Assets/images/vipUpgrade.webp")} alt=""/>
+                <div className={"container"}>
+                    <div className={"textContainer no-margin"}>
+                        <p>
+                            VIP UPGRADE
+                        </p>
+                        <p>
+                            VIP UPGRADE
+                        </p>
+                        <p>
+                            VIP UPGRADE
+                        </p>
+                    </div>
+                </div>
+            </div>
         </>);
     }
 }
