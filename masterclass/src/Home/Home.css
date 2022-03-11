@@ -511,3 +511,39 @@
     justify-content: center;
 }
 
+.cosaOtterrai {
+    background-image: url("../Assets/images/cosaOtterrai.webp");
+    height: 2160px;
+    background-position: top;
+    flex-direction: column;
+    font-size: 26px;
+    justify-content: flex-start;
+    background-size: contain;
+}
+
+.cosaOtterrai .title {
+    font-family: code-pro;
+    font-size: 48px;
+    margin-top: 6%;
+}
+
+.cosaOtterrai p:nth-child(2) {
+    margin-top: 12%;
+    margin-left: -20%;
+}
+
+.cosaOtterrai p:nth-child(3) {
+    margin-top: 14%;
+    margin-right: -20%;
+}
+
+.cosaOtterrai p:nth-child(4) {
+    margin-top: 32%;
+    margin-left: -10%;
+}
+
+.cosaOtterrai p:nth-child(5) {
+    margin-top: 13%;
+    margin-right: -15%;
+}
+

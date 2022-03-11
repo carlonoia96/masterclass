@@ -289,6 +289,19 @@ class Home extends React.Component<{}, HomeProps> {
                     </div>
                 </div>
             </div>
+            <div className={"cosaOtterrai default-block-size"}>
+                <p className={"title"}>
+                    COSA OTTERRAI
+                </p>
+                <p>
+                    50+ VIDEOLEZIONI
+                </p>
+                <p>
+                    30+ CHECKLIST
+                </p>
+                <p>12 PDF SCARICABILI </p>
+                <p>10+ FOGLI DI LAVORO </p>
+            </div>
         </>);
     }
 }
