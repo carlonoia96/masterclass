@@ -60,6 +60,10 @@
     color: #545454;
 }
 
+.color-light-gary {
+    color: #d9d9d9;
+}
+
 .white {
     color: white;
 }
@@ -667,6 +671,7 @@
     padding: 2%;
     cursor: pointer;
 }
+
 .investimento .containerBtn.colorInverted {
     background-color: #ff696a;
 }
@@ -680,7 +685,7 @@
     justify-content: center;
 }
 
-.investimento .backgroundBtn.colorInverted{
+.investimento .backgroundBtn.colorInverted {
     background-color: #ff1616;
 }
 
@@ -690,7 +695,7 @@
     font-size: calc(1px + 0.8vw);
 }
 
-.investimento .text{
+.investimento .text {
     font-weight: bold;
     color: #545454;
     margin-top: 15%;
@@ -708,7 +713,7 @@
     width: 100%;
 }
 
-.accessoLimitato .container{
+.accessoLimitato .container {
     position: absolute;
     top: 0;
     left: 0;
@@ -716,7 +721,7 @@
     width: 100%;
 }
 
-.accessoLimitato .title{
+.accessoLimitato .title {
     font-family: code-pro;
     font-size: calc(1px + 4.7vw);
     text-align: center;
@@ -726,7 +731,7 @@
     color: white;
 }
 
-.accessoLimitato .text{
+.accessoLimitato .text {
     color: white;
     width: 51%;
     font-size: calc(1px + 1.6vw);
@@ -750,7 +755,7 @@
     width: 100%;
 }
 
-.vipUpgrade .container{
+.vipUpgrade .container {
     position: absolute;
     top: 0;
     left: 0;
@@ -758,11 +763,182 @@
     width: 100%;
 }
 
-.vipUpgrade .textContainer{
+.vipUpgrade .textContainer {
     width: 30%;
     margin-left: 35%;
-    margin-top: 4%;
-    height: 31%;
+    margin-top: 7.5%;
+    height: 26%;
     text-align: center;
     font-size: calc(1px + 3.5vw);
+    font-weight: bolder;
+}
+
+.vipUpgrade .iconsContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.vipUpgrade .iconsContainer > div {
+    height: 100%;
+    text-align: center;
+    margin: 5%;
+    font-size: calc(1px + 1vw);
+    color: red;
+    font-weight: bold;
+}
+
+.vipUpgrade .iconsContainer img {
+    height: 14%;
+    width: auto;
+    margin-top: 14vw;
+}
+
+
+.bonus {
+    height: max-content;
+    position: relative;
+}
+
+.bonus > img {
+    height: auto;
+    width: 100%;
+}
+
+.bonus .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bonus .title {
+    color: #545454;
+    font-weight: bold;
+    width: max-content;
+    margin-left: 37vw;
+    margin-top: 5vw;
+    font-size: calc(1px + 3vw);
+}
+
+.bonus .subtitle {
+    color: #a6a6a6;
+    width: max-content;
+    font-size: calc(1px + 1.5vw);
+    margin-left: 39vw;
+    margin-top: -1vw;
+}
+
+.bonus .container img {
+    height: 55%;
+    width: auto;
+    margin-left: 8vw;
+    margin-top: 1vw;
+}
+
+.bonus .strategia {
+    color: #ff1616;
+    margin-top: -27vw;
+    margin-left: 51vw;
+    font-size: calc(1px + 2.5vw);
+}
+
+.bonus .elenco {
+    width: 40vw;
+    margin-left: 48vw;
+    font-size: calc(1px + 1.2vw);
+    margin-top: 4vw;
+}
+
+.bonus li {
+    margin-bottom: 1vw;
+}
+
+
+.ora {
+    height: max-content;
+    position: relative;
+}
+
+.ora > img {
+    height: auto;
+    width: 100%;
+}
+
+.ora .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.ora .title {
+    color: #545454;
+    font-weight: bold;
+    font-size: calc(1px + 3vw);
+}
+
+.ora .titleContainer {
+    width: 50vw;
+    margin-left: 49vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.ora .description {
+    font-size: calc(1px + 1.5vw);
+    padding: 4%;
+    padding-top: 0;
+    margin-top: 3vw;
+}
+
+
+.ora .btn {
+    background-color: #ff1616;
+    border-radius: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: calc(1px + 1.4vw);
+    padding-bottom: 10px;
+    color: white;
+    width: 20vw;
+    margin-top: 3vw;
+    cursor: pointer;
+}
+
+.ora .info {
+    width: 39vw;
+    font-size: calc(1px + 2vw);
+    margin-left: 2vw;
+}
+
+.ora .ipad{
+    height: 20vw;
+    width: auto;
+    margin-top: -18vw;
+    margin-left: 18vw;
+}
+
+.ora .infoBtn{
+    background-color: #ff1616;
+    border-radius: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: calc(1px + 1.4vw);;
+    padding-bottom: 10px;
+    color: white;    width: 20vw;
+    margin-left: 50vw;
+    margin-top: -3vw;
+}
+
+
+.faq{
+    background-image: url("../Assets/images/sfondoFaq.webp");
 }
