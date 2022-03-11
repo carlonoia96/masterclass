@@ -56,10 +56,13 @@
     color: #ff1616;
 }
 
+.color-gary {
+    color: #545454;
+}
+
 .white {
     color: white;
 }
-
 
 .first-viewed {
     background-image: url("../Assets/images/sfondoHome.webp");
@@ -547,3 +550,150 @@
     margin-right: -15%;
 }
 
+.costo {
+    background-image: url("../Assets/images/sfondoCosto.webp");
+    height: 1080px;
+}
+
+.costo .boxWithText > p {
+    font-size: 56px;
+}
+
+.costo .boxWithText {
+    width: 510px;
+    height: 250px;
+    margin-left: -35%;
+}
+
+.investimento {
+    height: max-content;
+    position: relative;
+}
+
+.investimento > img {
+    width: 100%;
+    height: auto;
+}
+
+.investimento .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.investimento .title {
+    font-size: calc(1px + 3vw);
+    text-align: center;
+    font-weight: bold;
+    color: #545454;
+    margin: 0;
+    margin-top: 8.9%;
+}
+
+.investimento .containerFormula {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 62.2%;
+    position: relative;
+    margin-left: -0.3%;
+}
+
+.investimento .containerFormula > div {
+    width: 29.1%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.investimento .formulaTitle {
+    text-align: center;
+    margin: 0;
+    font-size: calc(1px + 2vw);
+}
+
+.investimento .titleContainer {
+    height: 14%;
+    background-color: white;
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #545454;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.investimento .backgroundRed {
+    width: 100%;
+    height: 100%;
+    background-color: #ff696a;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.investimento .priceOnlyCourse {
+    color: #ff696a;
+    font-weight: bold;
+    font-size: calc(1px + 4vw);
+    margin: 0;
+}
+
+.investimento .containerBtn {
+    background-color: #ff1616;
+    width: 75%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    padding: 2%;
+    cursor: pointer;
+}
+.investimento .containerBtn.colorInverted {
+    background-color: #ff696a;
+}
+
+.investimento .backgroundBtn {
+    background-color: #ff696a;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.investimento .backgroundBtn.colorInverted{
+    background-color: #ff1616;
+}
+
+.investimento .containerFormula > div > :nth-child(2) {
+    margin-bottom: 2%;
+    margin-top: 7%;
+    font-size: calc(1px + 0.8vw);
+}
+
+.investimento .text{
+    font-weight: bold;
+    color: #545454;
+    margin-top: 15%;
+    margin-bottom: 0;
+    font-size: calc(1px + 0.8vw);
+}

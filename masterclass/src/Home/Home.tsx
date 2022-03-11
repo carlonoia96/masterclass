@@ -302,6 +302,140 @@ class Home extends React.Component<{}, HomeProps> {
                 <p>12 PDF SCARICABILI </p>
                 <p>10+ FOGLI DI LAVORO </p>
             </div>
+            <div className={"costo default-block-size"}>
+                <div className={"textContainer boxWithText"}>
+                    <p className={"no-margin grassetto"}>
+                        QUAL E' IL COSTO <br/>
+                        DI <span className={"color-red"}>IDM</span>?
+                    </p>
+                    <div className={"btn no-margin"}>
+                        <p>
+                            scopri
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className={"investimento default-block-size"}>
+                <img src={require("../Assets/images/sfondoInvestimento.webp")} alt=""/>
+                <div className={"container"}>
+                    <p className={"title"}>
+                        SCEGLI IL TUO PIANO
+                    </p>
+                    <div className={"containerFormula"}>
+                        <div className={"col1"}>
+                            <div className={"titleContainer"}>
+                                <div className={"backgroundRed"}>
+                                    <p className={"formulaTitle"}>
+                                        UNICA <br/>
+                                        SOLUZIONE
+                                    </p>
+                                </div>
+                            </div>
+                            <p className={"grassetto color-gary"}>
+                                SOLO CORSO
+                            </p>
+                            <p className={"priceOnlyCourse"}>
+                                <span className={"color-red"} style={{fontSize: "calc(1px + 2.5vw)"}}>€</span> 2497
+                            </p>
+                            <div className={"containerBtn"}>
+                                <div className={"backgroundBtn"}>
+                                    <p>
+                                        REGISTRATI ORA
+                                    </p>
+                                </div>
+                            </div>
+                            <p className={"text"}>
+                                CORSO + <br/>
+                                VIP UPGRADE
+                            </p>
+                            <p className={"priceOnlyCourse"}>
+                                <span className={"color-red"} style={{fontSize: "calc(1px + 2.5vw)"}}>€</span> 2899
+                            </p>
+                            <div className={"containerBtn colorInverted"}>
+                                <div className={"backgroundBtn colorInverted"}>
+                                    <p>
+                                        REGISTRATI ORA
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={"col2"}>
+                            <div className={"titleContainer"}>
+                                <div className={"backgroundRed"}>
+                                    <p className={"formulaTitle"}>
+                                        PAGA CON <br/>
+                                        3 RATE
+                                    </p>
+                                </div>
+                            </div>
+                            <p className={"grassetto color-gary"}>
+                                SOLO CORSO
+                            </p>
+                            <p className={"priceOnlyCourse"}>
+                                <span className={"color-red"} style={{fontSize: "calc(1px + 2.5vw)"}}>€</span> 850
+                            </p>
+                            <div className={"containerBtn"}>
+                                <div className={"backgroundBtn"}>
+                                    <p>
+                                        REGISTRATI ORA
+                                    </p>
+                                </div>
+                            </div>
+                            <p className={"text"}>
+                                CORSO + <br/>
+                                VIP UPGRADE
+                            </p>
+                            <p className={"priceOnlyCourse"}>
+                                <span className={"color-red"} style={{fontSize: "calc(1px + 2.5vw)"}}>€</span> 980
+                            </p>
+                            <div className={"containerBtn colorInverted"}>
+                                <div className={"backgroundBtn colorInverted"}>
+                                    <p>
+                                        REGISTRATI ORA
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={"col3"}>
+                            <div className={"titleContainer"}>
+                                <div className={"backgroundRed"}>
+                                    <p className={"formulaTitle"}>
+                                        PAGA CON <br/>
+                                        7 RATE
+                                    </p>
+                                </div>
+                            </div>
+                            <p className={"grassetto color-gary"}>
+                                SOLO CORSO
+                            </p>
+                            <p className={"priceOnlyCourse"}>
+                                <span className={"color-red"} style={{fontSize: "calc(1px + 2.5vw)"}}>€</span> 370
+                            </p>
+                            <div className={"containerBtn"}>
+                                <div className={"backgroundBtn"}>
+                                    <p>
+                                        REGISTRATI ORA
+                                    </p>
+                                </div>
+                            </div>
+                            <p className={"text"}>
+                                CORSO + <br/>
+                                VIP UPGRADE
+                            </p>
+                            <p className={"priceOnlyCourse"}>
+                                <span className={"color-red"} style={{fontSize: "calc(1px + 2.5vw)"}}>€</span> 420
+                            </p>
+                            <div className={"containerBtn colorInverted"}>
+                                <div className={"backgroundBtn colorInverted"}>
+                                    <p>
+                                        REGISTRATI ORA
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>);
     }
 }
