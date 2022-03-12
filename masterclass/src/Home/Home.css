@@ -68,6 +68,24 @@
     color: white;
 }
 
+.default-block-size.only-desktop {
+    height: max-content;
+    position: relative;
+}
+
+.default-block-size.only-desktop > img {
+    height: auto;
+    width: 100%;
+}
+
+.default-block-size.only-desktop .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .first-viewed {
     background-image: url("../Assets/images/sfondoHome.webp");
     font-family: 'code-pro';
@@ -919,26 +937,70 @@
     margin-left: 2vw;
 }
 
-.ora .ipad{
+.ora .ipad {
     height: 20vw;
     width: auto;
     margin-top: -18vw;
     margin-left: 18vw;
 }
 
-.ora .infoBtn{
+.ora .infoBtn {
     background-color: #ff1616;
     border-radius: 15px;
     padding-left: 25px;
     padding-right: 25px;
     font-size: calc(1px + 1.4vw);;
     padding-bottom: 10px;
-    color: white;    width: 20vw;
+    color: white;
+    width: 20vw;
     margin-left: 50vw;
     margin-top: -3vw;
 }
 
+.faqs {
+    background-color: #eff0f2;
+}
 
-.faq{
-    background-image: url("../Assets/images/sfondoFaq.webp");
+.faqs > img {
+    width: 100%;
+    height: auto;
+}
+
+.faqs > .container {
+    background-color: #eff0f200;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -18vw;
+    margin-bottom: -18vw;
+}
+
+.faqs .block {
+    width: 50vw;
+    background-color: white;
+    padding: 1vw;
+    text-align: center;
+    color: #545454;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: calc(1px + 1.8vw);
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 1vw;
+}
+
+.faqs .title {
+    font-size: calc(1px + 1.3vw);
+    font-weight: bold;
+}
+
+.faqs .description {
+    font-size: calc(1px + 1vw);
+    width: 40vw;
+    margin-top: 2vw;
 }

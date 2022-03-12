@@ -7,7 +7,8 @@ import App from "../App";
 
 interface HomeProps {
     blocks: any,
-    modules: any
+    modules: any,
+    statusFaq?: any
 }
 
 class Home extends React.Component<{}, HomeProps> {
@@ -16,7 +17,8 @@ class Home extends React.Component<{}, HomeProps> {
         super(props);
         this.state = {
             blocks: blocks,
-            modules: modules
+            modules: modules,
+            statusFaq: []
         }
     }
 
@@ -26,7 +28,9 @@ class Home extends React.Component<{}, HomeProps> {
         } else {
             block.open = false;
         }
-        this.setState({});
+        this.setState({
+            blocks
+        });
     }
 
     blockStyle(block: any) {
@@ -52,6 +56,29 @@ class Home extends React.Component<{}, HomeProps> {
             return "image"
         }
 
+    }
+
+    faqEvent(event: any) {
+        if (!this.state.statusFaq[event]) {
+            for (const key in this.state.statusFaq) {
+                this.state.statusFaq[key] = false;
+            }
+            this.state.statusFaq[event] = true;
+        } else {
+            this.state.statusFaq[event] = false;
+        }
+
+        this.setState({
+            statusFaq: this.state.statusFaq
+        })
+    }
+
+    isOpen(index: any) {
+        if (!this.state.statusFaq[index]) {
+            return {height: "calc(1px + 1.8vw)"}
+        } else {
+            return {height: "auto"}
+        }
     }
 
     render() {
@@ -568,7 +595,162 @@ class Home extends React.Component<{}, HomeProps> {
                         </p>
                     </div>
                 </div>
-                <div className={"faq default-block-size"}/>
+                <div className={"faq default-block-size only-desktop"}>
+                    <img src={require("../Assets/images/sfondoFaq.webp")} alt=""/>
+                </div>
+
+                <div className={"faqs"}>
+                    <img src={require("../Assets/images/faqTop.webp")} alt=""/>
+                    <div className={"container"}>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(0)} style={this.isOpen(0)}>
+                            <p className={"title"}>
+                                Qual è l'obiettivo del corso?
+                            </p>
+                            <p className={"description text-center"}>
+                                L'obiettivo del corso è preparare una figura professionale e preparata a tutto tondo
+                                all'interno del design d'interni.
+                                Tale figura deve essere in primo luogo capace di comprendere le reali necessità del suo
+                                committente e sulla base di queste deve creare un progetto efficace, attraverso vari
+                                fattori.
+                                Tra questi vi sono la conoscenza di stili e tendenze, il corretto utilizzo di materiali
+                                e texture, la scelta dei prodotti d'arredo adeguati alle diverse esigenze e funzioni.
+                                Inoltre, vi è la capacità di progettare gli spazi in modo funzionale e di saperli
+                                rappresentare sia tramite il disegno manuale che digitale. Per non parlare
+                                dell'importanza che ricopre l'illuminazione.
+                                Il corso si prefigge come obiettivo quello di fornire tutti gli strumenti necessari alla
+                                realizzazione di un ottimo progetto di interni e di alimentare sempre la curiosità e la
+                                creatività dei suoi studenti.
+                            </p>
+                        </div>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(1)} style={this.isOpen(1)}>
+                            <p className={"title"}>
+                                A chi è rivolta la Masterclass?
+                            </p>
+                            <p className={"description text-center"}>
+                                La Masterclass si rivolge a:
+                                <ul>
+                                    <li>
+                                        figure già esperte del settore d'interni che vogliono rimanere sempre in
+                                        costante aggiornamento o che vogliono affinare le loro conoscenze;
+                                    </li>
+                                    <li>
+                                        architetti che hanno il desiderio di poter soddisfare i propri clienti offrendo
+                                        anche il servizio di progettazione degli spazi interni;
+                                    </li>
+                                    <li>
+                                        aspiranti interior designer che vogliono fare della propria passione la propria
+                                        professione;
+                                    </li>
+                                    <li>
+                                        home lovers che desiderano compiere scelte stilistiche corrette nelle proprie
+                                        abitazioni o che vogliono gestire gli arredi di casa autonomamente;
+                                    </li>
+                                    <li>
+                                        agenti immobiliari o persone che vogliono lavorare a contatto con queste figure,
+                                        con l'obiettivo finale di saper vendere/affittare in meno tempo possibile un
+                                        immobile, grazie alla scelta consapevole da parte del cliente di come potrebbero
+                                        essere suddivisi e progettati gli spazi interni
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(2)} style={this.isOpen(2)}>
+                            <p className={"title"}>
+                                Quanto tempo mi ci vorrà per completare il corso?
+                            </p>
+                            <p className={"description text-center"}>
+                                IDM prevede una durata di 12 mesi, esattamente un mese per ciascun modulo di cui si
+                                compone.
+                                Solo per coloro che sceglieranno l'opzione vip-upgrade il corso sarà usufruibile senza
+                                limite di accesso.
+                                I 12 mesi messi a disposizione sono più che sufficienti per dimostrare di partire con lo
+                                spirito giusto, ossia quello di avere la grinta e la voglia di applicarsi tante ore
+                                quotidianamente nello studio di un mestiere sempre più richiesto e in continua
+                                evoluzione.
+                                In questi mesi avrai l'opportunità di dedicarti al 100% al suo interno, scaricare tutti
+                                i file pdf messi a disposizione per poter apprendere più in fretta e soprattutto per
+                                segnare gli appunti necessari ad un ripasso di argomenti nel corso degli anni.
+                                Se al contrario, pensi di non riuscire a dedicare qualche ora del tuo tempo
+                                quotidianamente il consiglio è di fare l'accesso vip.
+                            </p>
+                        </div>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(3)} style={this.isOpen(3)}>
+                            <p className={"title"}>
+                                Com'è strutturato?
+                            </p>
+                            <p className={"description text-center"}>
+                                IDM si sviluppa in 12 moduli, pensati per accrescere le tue competenze uno ogni mese.
+                                All'interno di ciascun modulo troverai raggruppati gli argomenti per classi.
+                                Potrai accedere alla lezione successiva solo una volta aver completato quella corrente.
+                                La masterclass è strutturata come video lezione e potrà essere seguita ogni volta che
+                                vuoi e all'ora che preferisci, ciò che ti serve è una connessione a internet.
+                                I vantaggi di seguire un corso in questa modalità sono molteplici e la cosa migliore è
+                                che non resterai mai indietro con le lezioni.
+                                La tempistica scelta serve a me per comprendere i tuoi progressi e il modo in cui ti
+                                andrai ad applicare.
+                                Oltre alle videolezioni troverai anche altro materiale come pdf scaricabili e stampabili
+                                che resteranno sempre con te, delle cheklist studiate per fissare le tue competenze,
+                                fogli di lavoro per appunti o esercizi e tanto altro ancora a livello interattivo in
+                                ciascuna lezione.
+                            </p>
+                        </div>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(4)} style={this.isOpen(4)}>
+                            <p className={"title"}>
+                                Cosa trovo dentro alla Masterclass?
+                            </p>
+                            <p className={"description text-center"}>
+                                Al suo interno troverai tantissimi contenuti interattivi come video, quiz, domande a
+                                risposta multipla, box con spazi vuoti da compilare e molto altro.
+                                Non è un corso qualsiasi che puoi trovare ovunque, anzi, ho racchiuso in maniera
+                                intuitiva e divertente tutta la mia formazione, il mio percorso, i miei progetti e ho
+                                fatto in modo che anche tu potessi ricevere la mia stessa preparazione.
+
+                                Oltre a lezioni teoriche saranno presenti anche degli esercizi da svolgere.
+
+                                IDM è davvero la base del tuo successo ma per raggiungerlo dovrai impegnarti tanto!
+                                Se ami ciò che fai ti riuscirà senza alcuno sforzo!
+                            </p>
+                        </div>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(5)} style={this.isOpen(5)}>
+                            <p className={"title"}>
+                                Esiste un piano di pagamento?
+                            </p>
+                            <p className={"description text-center"}>
+                                Certo che sì!
+                                Potrai acquistare IDM in tre modalità: in un'unica soluzione o in più soluzioni tramite
+                                la scelta di tre o sette rate.
+
+                                Ho deciso di offrire a chiunque la possibilità di accedervi con la modalità più consona
+                                alle proprie necessità.
+
+                                IDM manterrà sempre lo stesso costo ma darò il privilegio ai primi che si iscriveranno
+                                quando apriranno le iscrizioni un vantaggio di costo, con un'offerta che non si ripeterà
+                                più!
+                            </p>
+                        </div>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(6)} style={this.isOpen(6)}>
+                            <p className={"title"}>
+                                Se mi iscrivo c'è un supporto?
+                            </p>
+                            <p className={"description text-center"}>
+                                A tutti gli iscritti c'è la possibilità di fare domande ogni volta che sarà necessario e
+                                proprio per facilitare questo passaggio ho creato un format apposito che ti consentirà
+                                ogni volta che completerai un modulo di inserire le tue perplessità. Sono ben accette
+                                riflessioni, pareri e suggerimenti perché l'obiettivo è spingere IDM sempre al massimo
+                                per aiutare quante più persone possibili a concretizzare i propri sogni.
+
+                                Sarà attivo un canale Telegram per gli utenti Vip-upgrade e uno Whatsapp per tutti gli
+                                altri.
+
+                                Inoltre, avrai modo di conoscermi meglio tramite la mia pagina Instagram e il mio canale
+                                YouTube.
+
+                                Cosa stai aspettando? Se hai dei dubbi approfittane subito!
+                            </p>
+                        </div>
+                    </div>
+                    <img src={require("../Assets/images/faqBottom.webp")} alt=""/>
+                </div>
             </>
         );
     }
