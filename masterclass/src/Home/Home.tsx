@@ -73,14 +73,14 @@ class Home extends React.Component<{}, HomeProps> {
         })
     }
 
-    isOpen(index: any, icon?:boolean) {
-        if(icon){
+    isOpen(index: any, icon?: boolean) {
+        if (icon) {
             if (!this.state.statusFaq[index]) {
                 return {height: "calc(1px + 1.8vw)"}
             } else {
                 return {height: "auto"}
             }
-        }else{
+        } else {
             if (!this.state.statusFaq[index]) {
                 return {color: "white"}
             } else {
@@ -101,7 +101,7 @@ class Home extends React.Component<{}, HomeProps> {
     render() {
         return (<>
                 <div className={"first-viewed default-block-size"}>
-                    <div className={"textContainer text-center no-margin"}>
+                    <div className={"textContainer text-center no-margin hide-not-mobile"}>
                         <p className={"title"}><span className={"color-red"}>I</span>nterior <span
                             className={"color-red"}>D</span>esign</p>
                         <p className={"title"} style={{marginTop: "60px"}}>
@@ -109,6 +109,15 @@ class Home extends React.Component<{}, HomeProps> {
                             <div className={"image"}/>
                         </p>
                     </div>
+                    <div className={"textContainer text-center hide-not-desktop"}>
+                        <p className={"subtitle"}>
+                            Ti presento
+                        </p>
+                        <p className={"title no-margin"}>
+                            IDM
+                        </p>
+                    </div>
+                    <div className={"image-home hide-not-desktop"}/>
                 </div>
                 <div className={"slide2 default-block-size"}>
                     <p className={"title color-red"}>
@@ -619,7 +628,8 @@ class Home extends React.Component<{}, HomeProps> {
                 <div className={"faqs"}>
                     <img src={require("../Assets/images/faqTop.webp")} alt=""/>
                     <div className={"container"}>
-                        <div className={"block no-margin"} onClick={() => this.faqEvent(0)} style={this.isOpen(0,true)}>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(0)}
+                             style={this.isOpen(0, true)}>
                             <p className={"title"} style={this.isOpen(0)}>
                                 Qual è l'obiettivo del corso?
                                 <i className={`faqs-icon icon-crea ${this.isIconOpen(0)}`}/>
@@ -647,7 +657,8 @@ class Home extends React.Component<{}, HomeProps> {
                                 </p>
                             </div>
                         </div>
-                        <div className={"block no-margin"} onClick={() => this.faqEvent(1)} style={this.isOpen(1,true)}>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(1)}
+                             style={this.isOpen(1, true)}>
                             <p className={"title"} style={this.isOpen(1)}>
                                 A chi è rivolta la Masterclass?
                                 <i className={`faqs-icon icon-crea ${this.isIconOpen(1)}`}/>
@@ -687,7 +698,8 @@ class Home extends React.Component<{}, HomeProps> {
                                 </p>
                             </div>
                         </div>
-                        <div className={"block no-margin"} onClick={() => this.faqEvent(2)} style={this.isOpen(2,true)}>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(2)}
+                             style={this.isOpen(2, true)}>
                             <p className={"title"} style={this.isOpen(2)}>
                                 Quanto tempo mi ci vorrà per completare il corso?
                                 <i className={`faqs-icon icon-crea ${this.isIconOpen(2)}`}/>
@@ -713,7 +725,8 @@ class Home extends React.Component<{}, HomeProps> {
                                 </p>
                             </div>
                         </div>
-                        <div className={"block no-margin"} onClick={() => this.faqEvent(3)} style={this.isOpen(3,true)}>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(3)}
+                             style={this.isOpen(3, true)}>
                             <p className={"title"} style={this.isOpen(3)}>
                                 Com'è strutturato?
                                 <i className={`faqs-icon icon-crea ${this.isIconOpen(3)}`}/>
@@ -741,7 +754,8 @@ class Home extends React.Component<{}, HomeProps> {
                                 </p>
                             </div>
                         </div>
-                        <div className={"block no-margin"} onClick={() => this.faqEvent(4)} style={this.isOpen(4,true)}>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(4)}
+                             style={this.isOpen(4, true)}>
                             <p className={"title"} style={this.isOpen(4)}>
                                 Cosa trovo dentro alla Masterclass?
                                 <i className={`faqs-icon icon-crea ${this.isIconOpen(4)}`}/>
@@ -762,7 +776,8 @@ class Home extends React.Component<{}, HomeProps> {
                                 </p>
                             </div>
                         </div>
-                        <div className={"block no-margin"} onClick={() => this.faqEvent(5)} style={this.isOpen(5,true)}>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(5)}
+                             style={this.isOpen(5, true)}>
                             <p className={"title"} style={this.isOpen(5)}>
                                 Esiste un piano di pagamento?
                                 <i className={`faqs-icon icon-crea ${this.isIconOpen(5)}`}/>
@@ -786,7 +801,8 @@ class Home extends React.Component<{}, HomeProps> {
                                 </p>
                             </div>
                         </div>
-                        <div className={"block no-margin"} onClick={() => this.faqEvent(6)} style={this.isOpen(6,true)}>
+                        <div className={"block no-margin"} onClick={() => this.faqEvent(6)}
+                             style={this.isOpen(6, true)}>
                             <p className={"title"} style={this.isOpen(6)}>
                                 Se mi iscrivo c'è un supporto?
                                 <i className={`faqs-icon icon-crea ${this.isIconOpen(6)}`}/>

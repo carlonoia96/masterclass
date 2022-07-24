@@ -106,6 +106,47 @@
     background-image: url("../Assets/images/sfondoHome.webp");
     font-family: 'code-pro';
 }
+.first-viewed .image-home{
+    background-image: url("../Assets/images/ipad-mobile-home.webp");
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 768px) {
+    .hide-not-mobile{
+        display: none;
+    }
+    .first-viewed {
+        background-image: url("../Assets/images/home-mobile.webp");
+    }
+    .first-viewed .textContainer{
+        position: absolute;
+        top: 5vh;
+    }
+    .first-viewed .subtitle{
+        color: white;
+        font-size: 36px;
+    }
+    .first-viewed .title{
+        color: white !important;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 80px !important;
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+        text-shadow: 5px 5px #ff1f1f !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hide-not-desktop{
+        display: none;
+    }
+}
 
 .first-viewed .title {
     font-size: 160px;
