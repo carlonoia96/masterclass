@@ -1,8 +1,10 @@
-import React, {FC} from 'react';
+import React, {FC, Fragment} from 'react';
 import './Home.css';
 import blocks from "./blocks.json";
 import modules from "./modules.json"
 import App from "../App";
+import Postcard from "../Postcard/Postcard";
+import Button from "../Button/Button";
 
 
 interface HomeProps {
@@ -149,7 +151,7 @@ class Home extends React.Component<{}, HomeProps> {
                                 </div>
                                 <div className={"col2"}>
                                     <p>
-                                        hai tanta voglia di studiare e imparare, anche se parti da 0 e se nuovo nel
+                                        hai tanta voglia di studiare e imparare, anche se parti da 0 e sei nuovo nel
                                         settore
                                     </p>
                                 </div>
@@ -209,34 +211,38 @@ class Home extends React.Component<{}, HomeProps> {
                 </div>
                 <div className={"idm default-block-size"}>
                     <div className={"container"}>
-                        <div className={"textContainer text-center"}>
-                            <p className={"color-red grassetto"} style={{fontSize: "34px"}}>
-                                IDM
-                            </p>
-                            <p>
-                                E' un <span className={"grassetto"}>corso online</span> nel quale ho raccolto tutta la
-                                mia<br/>
-                                <span className={"color-red"}>formazione</span>, <span
-                                className={"color-red"}>esperienza</span> e <span
-                                className={"color-red"}>professionalità</span>.
-                            </p>
-                            <p>
-                                IDM ti consentirà di <span className={"grassetto"}>imparare</span> tutto quello che si
-                                cela
-                                dietro ad un vero progetto di
-                                Interior Design per arredare nel miglior dei modi tutti gli spazi interni fruiti
-                                dall'uomo.
-                            </p>
-                            <p>
-                                Cosa aspetti <span
-                                className={"color-red grassetto"}>entra a far parte della classe ora!</span>
-                            </p>
-                        </div>
-                        <div className={"btn no-margin"}>
-                            <p className={"white grassetto"}>
-                                ISCRIVITI
-                            </p>
-                        </div>
+                        <Postcard
+                            classID={"postcard-1"}
+                            hoverEffect={true}
+                            title={"IDM"}
+                            text={
+                                <Fragment>
+                                    <p>
+                                        E' un <span className={"grassetto"}>corso online</span> nel quale ho raccolto
+                                        tutta la
+                                        mia<br/>
+                                        <span className={"color-red"}>formazione</span>, <span
+                                        className={"color-red"}>esperienza</span> e <span
+                                        className={"color-red"}>professionalità</span>.
+                                    </p>
+                                    <p>
+                                        IDM ti consentirà di <span className={"grassetto"}>imparare</span> tutto quello
+                                        che si
+                                        cela
+                                        dietro ad un vero progetto di
+                                        Interior Design per arredare nel miglior dei modi tutti gli spazi interni fruiti
+                                        dall'uomo.
+                                    </p>
+                                    <p>
+                                        Cosa aspetti? <br/>  <span
+                                        className={"color-red grassetto"}>Entra a far parte della classe ora!</span>
+                                    </p>
+                                    <Button text={"ISCRIVITI"}/>
+                                </Fragment>
+                            }
+                            image={false
+                            }
+                        />
                     </div>
                 </div>
 
@@ -265,11 +271,7 @@ class Home extends React.Component<{}, HomeProps> {
                             STRUTTURATO <br/>
                             IL CORSO?
                         </p>
-                        <div className={"btn"}>
-                            <p>
-                                scopri
-                            </p>
-                        </div>
+                        <Button text={"Scopri!"} />
                     </div>
                 </div>
                 <div className={"moduli default-block-size"}>
@@ -295,14 +297,12 @@ class Home extends React.Component<{}, HomeProps> {
                             UNISCITI ALLA MASTERCLASS
                         </p>
                         <p>
-                            Riserva il tuo posto all'interno della classe ora, senza impegno, per
-                            non perderti l'occasione di accedervi appena apriranno le iscrizioni ufficiali!
+                            <span className={"grassetto"}>Riserva</span> il tuo posto all'interno della classe
+                            ora, <span className={"grassetto"}>senza impegno</span>, per
+                            non perderti l'occasione di accedervi appena apriranno le iscrizioni ufficiali!<br/>Ci sono
+                            SOLO 10 posti disponibili!
                         </p>
-                        <div className={"btn"}>
-                            <p>
-                                Unisciti Ora
-                            </p>
-                        </div>
+                        <Button text={"Unisciti ora!"} />
                     </div>
                 </div>
                 <div className={"immagina default-block-size"}>
@@ -361,7 +361,7 @@ class Home extends React.Component<{}, HomeProps> {
                         30+ CHECKLIST
                     </p>
                     <p>12 PDF SCARICABILI </p>
-                    <p>10+ FOGLI DI LAVORO </p>
+                    <p>20+ FOGLI DI LAVORO </p>
                 </div>
                 <div className={"costo default-block-size"}>
                     <div className={"textContainer boxWithText"}>
@@ -369,11 +369,7 @@ class Home extends React.Component<{}, HomeProps> {
                             QUAL E' IL COSTO <br/>
                             DI <span className={"color-red"}>IDM</span>?
                         </p>
-                        <div className={"btn no-margin"}>
-                            <p>
-                                scopri
-                            </p>
-                        </div>
+                        <Button text={"Scopri!"} />
                     </div>
                 </div>
                 <div className={"investimento default-block-size"}>
@@ -607,18 +603,14 @@ class Home extends React.Component<{}, HomeProps> {
                                 tua
                                 passione è finalmente giunto il momento di far parte della classe!
                             </p>
-                            <p className={"btn"}>
-                                Voglio iscrivermi ora!
-                            </p>
+                            <Button text={"Voglio iscrivermi ora!"} />
                         </div>
                         <img className={"ipad"} src={require("../Assets/images/ipad.webp")} alt=""/>
                         <p className={"text-center info"}>
                             Se, in questo momento, l'indecisione risiede in te allora scopri maggiori informazioni sulla
                             Masterclass!
                         </p>
-                        <p className={"infoBtn text-center"}>
-                            Voglio iscrivermi ora!
-                        </p>
+                        <Button text={"Voglio iscrivermi ora!"} />
                     </div>
                 </div>
                 <div className={"faq default-block-size only-desktop"}>

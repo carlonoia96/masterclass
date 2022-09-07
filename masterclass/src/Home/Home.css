@@ -68,19 +68,19 @@
     color: white;
 }
 
-.background-white{
+.background-white {
     background-color: white !important;
 }
 
-.icon-crea{
+.icon-crea {
     background-image: url('../Assets/icons/crea.svg');
 }
 
-.rotate-right{
+.rotate-right {
     transform: rotate(135deg);
 }
 
-.rotate-left{
+.rotate-left {
     transform: rotate(-45deg);
 }
 
@@ -106,7 +106,8 @@
     background-image: url("../Assets/images/sfondoHome.webp");
     font-family: 'code-pro';
 }
-.first-viewed .image-home{
+
+.first-viewed .image-home {
     background-image: url("../Assets/images/ipad-mobile-home.webp");
     height: 50vh;
     width: 100%;
@@ -116,21 +117,25 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .hide-not-mobile{
+    .hide-not-mobile {
         display: none;
     }
+
     .first-viewed {
         background-image: url("../Assets/images/home-mobile.webp");
     }
-    .first-viewed .textContainer{
+
+    .first-viewed .textContainer {
         position: absolute;
         top: 5vh;
     }
-    .first-viewed .subtitle{
+
+    .first-viewed .subtitle {
         color: white;
         font-size: 36px;
     }
-    .first-viewed .title{
+
+    .first-viewed .title {
         color: white !important;
         text-transform: uppercase;
         text-align: center;
@@ -143,7 +148,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .hide-not-desktop{
+    .hide-not-desktop {
         display: none;
     }
 }
@@ -285,8 +290,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-right: 18%;
+    margin-right: 38%;
     margin-top: -20vh;
+}
+
+.idm .postCard-title{
+    color: #ff1616;
+    font-size: 2.5rem;
 }
 
 .idm .textContainer {
@@ -303,18 +313,23 @@
     margin-bottom: 80px;
 }
 
-.idm .btn {
-    font-size: 26px;
-    background-color: #545454;
-    width: 23%;
-    text-align: center;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 6px 6px #a6a6a6;
-    margin-top: -30px;
-    margin-left: -20%;
+/*.idm .btn {*/
+/*    font-size: 26px;*/
+/*    background-color: #545454;*/
+/*    width: 23%;*/
+/*    text-align: center;*/
+/*    height: 50px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    box-shadow: 6px 6px #a6a6a6;*/
+/*    margin-top: -30px;*/
+/*    margin-left: -20%;*/
+/*}*/
+
+.idm .postCard {
+    font-size: 1.5rem;
+    width: 40rem;
 }
 
 .faPerTe {
@@ -471,14 +486,14 @@
     text-align: center;
 }
 
-.unisciti .btn {
-    background-color: red;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-}
+/*.unisciti .btn {*/
+/*    background-color: red;*/
+/*    padding: 10px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    border-radius: 10px;*/
+/*}*/
 
 .unisciti .btn p {
     margin: 0;
@@ -975,17 +990,8 @@
 }
 
 
-.ora .btn {
-    background-color: #ff1616;
-    border-radius: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: calc(1px + 1.4vw);
-    padding-bottom: 10px;
-    color: white;
-    width: 20vw;
-    margin-top: 3vw;
-    cursor: pointer;
+.ora .btn p{
+    width: 15rem;
 }
 
 .ora .info {
@@ -1064,7 +1070,7 @@
     justify-content: space-between;
 }
 
-.faqs .descriptionContainer{
+.faqs .descriptionContainer {
     width: 52vw;
     position: relative;
     padding-bottom: 1vw;
