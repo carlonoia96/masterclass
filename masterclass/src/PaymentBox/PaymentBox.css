@@ -5,10 +5,82 @@
     flex-direction: row;
 }
 
-.paymentBox{
+.paymentBox {
     background-color: #545454;
+    height: 22em;
 }
 
-.paymentBox .title{
+.paymentBox .title,
+.paymentBox,
+.paymentBox .title p {
+    width: 11.5em;
+}
+
+.paymentBox .title {
     color: white;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: .7em;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.paymentBox .title p {
+    background-color: #ff6a6a;
+    margin: 0.3em;
+    border-radius: 0.5em;
+    padding: 0.4em;
+    font-size: 1.3em;
+}
+
+.paymentBox .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.paymentBox .price-box {
+    background-color: white;
+    width: 92%;
+    height: 13.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.paymentBox .price {
+    text-align: center;
+    font-size: 2.8em;
+    color: #ff6a6a;
+}
+
+.paymentBox .price span {
+    font-size: .7em;
+    margin-right: 0.2em;
+}
+
+.paymentBox .price p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.paymentBox .separator {
+    height: 0.2em;
+    width: 85%;
+    background-color: #545454;
+    border-radius: 1em;
+    margin-top: 1.5em;
+}
+
+.paymentBox-container a:hover,
+.paymentBox-container a:hover > div {
+    transform: scale(1.025);
 }

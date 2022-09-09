@@ -1,12 +1,21 @@
-.btn {
-    margin-top: 1rem;
+.btnJoin {
+    height: 2.5em;
+    width: 9.4em;
+    border-radius: .5em;
+    background-color: #ff1616;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1.5em;
 }
 
-.btn p {
-    padding: 1rem;
-    border-radius: 1rem;
-    width: 10rem;
+.btnJoin p {
+    margin: 0;
+    background-color: #ff6a6a;
+    width: 9em;
+    height: 2.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .3em;
 }

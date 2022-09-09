@@ -660,7 +660,6 @@
     background-size: cover;
     background-position: top;
     height: 38.5em;
-    margin-bottom: 50px;
     font-size: 28px;
     display: flex;
     flex-direction: column;
@@ -681,13 +680,11 @@
     color: white;
     width: 60%;
     text-align: center;
-    height: 2em;
+    height: 1.3em;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5em;
-    text-decoration: line-through;
-    text-decoration-color: #ff1616;
+    font-size: 2em;
 }
 
 .investimento-box .paymentBox-container{
@@ -695,7 +692,21 @@
     height: 24.5em;
 }
 
+.investimento-box .originalPrice p{
+    position: relative;
+}
 
+
+.investimento-box .originalPrice p:after{
+    content: '';
+    position: absolute;
+    top: 0.54em;
+    left: -0.4em;
+    width: 4em;
+    height: 0.1em;
+    background-color: #ff1616;
+    border-radius: 1em;
+}
 
 .investimento {
     height: max-content;

@@ -15,20 +15,22 @@ class PaymentBox extends React.Component<PaymentBoxProps> {
 
                 {
                     this.props.paymentBox.installments.map(value => (
-                        <div className={"paymentBox"}>
-                            <div className={"container"}>
-                                <div className={"title"}>
-                                    <p> {value.title} </p>
-                                </div>
-                                <div className={"price-box"}>
-                                    <div className={"price"}>
-                                        <p> {value.price} </p>
+                        <a href={value.link} target={"_blank"}>
+                            <div className={"paymentBox"}>
+                                <div className={"container"}>
+                                    <div className={"title"}>
+                                        <p> {value.title} </p>
                                     </div>
-                                    <div className={"separator"}/>
-                                    {value.btnText ? <JoinButton text={value.btnText}/> : null}
+                                    <div className={"price-box"}>
+                                        <div className={"price"}>
+                                            <p><span className={"color-red"}>€ </span> {value.price}</p>
+                                        </div>
+                                        <div className={"separator"}/>
+                                        {value.btnText ? <JoinButton text={value.btnText}/> : null}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     ))
                 }
 
