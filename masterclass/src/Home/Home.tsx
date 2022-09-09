@@ -5,6 +5,10 @@ import modules from "./modules.json"
 import App from "../App";
 import Postcard from "../Postcard/Postcard";
 import Button from "../Button/Button";
+import PaymentBox from "../PaymentBox/PaymentBox";
+import {types} from "util";
+import {type} from "os";
+import PaymentBoxModel from "../PaymentBox/PaymentBox.model";
 
 
 interface HomeProps {
@@ -101,6 +105,26 @@ class Home extends React.Component<{}, HomeProps> {
     }
 
     render() {
+        const paymentBox: PaymentBoxModel = {
+            installments: [
+                {
+                    title: <Fragment>UNICA<br/>SOLUZIONE</Fragment> ,
+                    price: 897,
+                    btnText: "UNISCITI ORA!",
+                },
+                {
+                    title: <Fragment>PAGA<br/>IN 3 RATE</Fragment>,
+                    price: 320,
+                    btnText: "UNISCITI ORA!",
+                },
+                {
+                    title: <Fragment>PAGA<br/>IN 6 RATE</Fragment>,
+                    price: 140,
+                    btnText: "UNISCITI ORA!",
+                }
+            ]
+        }
+
         return (<>
                 <div className={"first-viewed default-block-size"}>
                     <div className={"textContainer text-center no-margin hide-not-mobile"}>
@@ -234,7 +258,7 @@ class Home extends React.Component<{}, HomeProps> {
                                         dall'uomo.
                                     </p>
                                     <p>
-                                        Cosa aspetti? <br/>  <span
+                                        Cosa aspetti? <br/> <span
                                         className={"color-red grassetto"}>Entra a far parte della classe ora!</span>
                                     </p>
                                     <Button text={"ISCRIVITI"}/>
@@ -271,7 +295,7 @@ class Home extends React.Component<{}, HomeProps> {
                             STRUTTURATO <br/>
                             IL CORSO?
                         </p>
-                        <Button text={"Scopri!"} />
+                        <Button text={"Scopri!"}/>
                     </div>
                 </div>
                 <div className={"moduli default-block-size"}>
@@ -302,7 +326,7 @@ class Home extends React.Component<{}, HomeProps> {
                             non perderti l'occasione di accedervi appena apriranno le iscrizioni ufficiali!<br/>Ci sono
                             SOLO 10 posti disponibili!
                         </p>
-                        <Button text={"Unisciti ora!"} />
+                        <Button text={"Unisciti ora!"}/>
                     </div>
                 </div>
                 <div className={"immagina default-block-size"}>
@@ -369,8 +393,30 @@ class Home extends React.Component<{}, HomeProps> {
                             QUAL E' IL COSTO <br/>
                             DI <span className={"color-red"}>IDM</span>?
                         </p>
-                        <Button text={"Scopri!"} />
+                        <Button text={"Scopri!"}/>
                     </div>
+                </div>
+                <div className={"prezzoLancio default-block-size"}>
+                    <p className={"text-center"}>
+                        La tua iscrizione non è ufficiale, ti consentirà solo di poter accedere in futuro alla classe al
+                        prezzo esclusivo di lancio.
+                        Prezzo che non si ripeterà più!<br/>
+                        Per farlo è necessario stabilire quale delle 3 modalità di pagamento preferisci.<br/>
+                        Ricorda che ci sono solo 10 posti disponibili!
+                    </p>
+                </div>
+                <div className={"investimento-box"}>
+                    <p className={"title"}>
+                        SCEGLI IL TUO PIANO IPOTETICO
+                    </p>
+                    <div className={"originalPrice"}>
+                        <p>
+                            2500€
+                        </p>
+                    </div>
+
+                    <PaymentBox paymentBox={paymentBox}/>
+
                 </div>
                 <div className={"investimento default-block-size"}>
                     <img src={require("../Assets/images/sfondoInvestimento.webp")} alt=""/>
@@ -493,68 +539,6 @@ class Home extends React.Component<{}, HomeProps> {
                         </div>
                     </div>
                 </div>
-                <div className={"accessoLimitato default-block-size"}>
-                    <img src={require("../Assets/images/accessoLimitato.webp")} alt=""/>
-                    <div className={"container"}>
-                        <p className={"title"}>
-                            Accesso limitato <br/>
-                            a 12 mesi
-                        </p>
-                        <p className={"text"}>
-                            <span className={"color-red"}>IDM</span> è pensato per portare le tue <span
-                            className={"grassetto"}>skills al livello successivo</span>.
-                            Così come mi sono impegnata io nella creazione di un corso di Interior Design così completo,
-                            ora
-                            mi aspetto da te tante ore dedicate allo studio e quindi per metterti alla prova ho deciso
-                            di
-                            darti un <span className={"grassetto"}>tempo</span>, quello <span
-                            className={"grassetto"}>sufficiente</span> per poter davvero diventare un/una designer di
-                            successo!
-                        </p>
-                    </div>
-                </div>
-                <div className={"vipUpgrade default-block-size"}>
-                    <img src={require("../Assets/images/vipUpgrade.webp")} alt=""/>
-                    <div className={"container"}>
-                        <div className={"textContainer no-margin"}>
-                            <p className={"color-gary"}>
-                                VIP UPGRADE
-                            </p>
-                            <p className={"color-light-gary"}>
-                                VIP UPGRADE
-                            </p>
-                            <p className={"color-red"}>
-                                VIP UPGRADE
-                            </p>
-                        </div>
-                        <div className={"iconsContainer"}>
-                            <div className={"col1"}>
-                                <img src={require("../Assets/images/mac.webp")} alt=""/>
-                                <p>
-                                    Accesso<br/>
-                                    esclusivo<br/>
-                                    a vita
-                                </p>
-                            </div>
-                            <div className={"col2"}>
-                                <img src={require("../Assets/images/docs.webp")} alt=""/>
-                                <p>
-                                    Accesso<br/>
-                                    ad un fantastico<br/>
-                                    bonus
-                                </p>
-                            </div>
-                            <div className={"col3"}>
-                                <img src={require("../Assets/images/world.webp")} alt=""/>
-                                <p>
-                                    Accesso<br/>
-                                    riservato alla<br/>
-                                    community
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div className={"bonus default-block-size"}>
                     <img src={require("../Assets/images/sfondoBonus.webp")} alt=""/>
                     <div className={"container"}>
@@ -603,14 +587,14 @@ class Home extends React.Component<{}, HomeProps> {
                                 tua
                                 passione è finalmente giunto il momento di far parte della classe!
                             </p>
-                            <Button text={"Voglio iscrivermi ora!"} />
+                            <Button text={"Voglio iscrivermi ora!"}/>
                         </div>
                         <img className={"ipad"} src={require("../Assets/images/ipad.webp")} alt=""/>
                         <p className={"text-center info"}>
                             Se, in questo momento, l'indecisione risiede in te allora scopri maggiori informazioni sulla
                             Masterclass!
                         </p>
-                        <Button text={"Voglio iscrivermi ora!"} />
+                        <Button text={"Voglio iscrivermi ora!"}/>
                     </div>
                 </div>
                 <div className={"faq default-block-size only-desktop"}>

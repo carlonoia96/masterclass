@@ -31,12 +31,7 @@
 }
 
 .boxWithText .btn p {
-    background-color: #ff1616;
-    border-radius: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
     font-size: 28px;
-    padding-bottom: 10px;
 }
 
 .text-center {
@@ -659,6 +654,49 @@
     margin-left: -35%;
 }
 
+.investimento-box{
+    background-image: url("../Assets/images/inv.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 38.5em;
+    margin-bottom: 50px;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.investimento-box .title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: #545454;
+    padding-top: 2.2em;
+}
+
+.investimento-box .originalPrice{
+    background-color: #545454;
+    color: white;
+    width: 60%;
+    text-align: center;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    text-decoration: line-through;
+    text-decoration-color: #ff1616;
+}
+
+.investimento-box .paymentBox-container{
+    width: 60%;
+    height: 24.5em;
+}
+
+
+
 .investimento {
     height: max-content;
     position: relative;
@@ -885,7 +923,18 @@
     width: auto;
     margin-top: 14vw;
 }
+.prezzoLancio{
+    background-image: url("../Assets/images/prezzoLancio.webp");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.prezzoLancio p{
+    font-size: 28px;
+    width: 850px;
+    margin-top: 25%;
+}
 
 .bonus {
     height: max-content;
@@ -986,12 +1035,20 @@
     font-size: calc(1px + 1.5vw);
     padding: 4%;
     padding-top: 0;
-    margin-top: 3vw;
+    margin-top: 4.5vw;
 }
 
+.ora .btn{
+    font-size: 28px;
+}
 
 .ora .btn p{
-    width: 15rem;
+    width: 22rem;
+}
+
+.ora .container > .btn{
+    margin-left: 500px;
+    margin-top: -90px;
 }
 
 .ora .info {

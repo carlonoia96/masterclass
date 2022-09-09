@@ -1,0 +1,14 @@
+.paymentBox-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.paymentBox{
+    background-color: #545454;
+}
+
+.paymentBox .title{
+    color: white;
+}
