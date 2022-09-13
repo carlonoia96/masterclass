@@ -51,7 +51,7 @@ a:hover > div {
 
 .no-hover-effect:hover,
 .no-hover-effect:hover > div {
-    transform: scale(1);
+    transform: scale(1) !important;
 }
 
 button {

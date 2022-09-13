@@ -160,7 +160,7 @@ class Home extends React.Component<{}, HomeProps> {
                                 </p>
                             </div>
                         </div>
-                        <div className={"col2"}>
+                        <div className={"col2 hide-not-mobile"}>
                             <div className={"image"}/>
                         </div>
                     </div>
@@ -175,7 +175,7 @@ class Home extends React.Component<{}, HomeProps> {
                                 </div>
                                 <div className={"col2"}>
                                     <p>
-                                        hai tanta voglia di studiare e imparare, anche se parti da 0 e sei nuovo nel
+                                        hai tanta <span className={"color-red"}>voglia di studiare</span> e imparare, anche se parti da 0 e sei nuovo nel
                                         settore
                                     </p>
                                 </div>
@@ -186,7 +186,7 @@ class Home extends React.Component<{}, HomeProps> {
                                 </div>
                                 <div className={"col2"}>
                                     <p>
-                                        senti che è arrivato il momento di metterti finalmente in gioco e spolverare un
+                                        senti che è arrivato il momento di <span className={"color-red"}>metterti</span> finalmente <span className={"color-red"}>in gioco</span> e spolverare un
                                         po'
                                         delle tue vecchie conoscenze per restare sempre al passo con gli ultimi
                                         aggiornamenti
@@ -199,7 +199,7 @@ class Home extends React.Component<{}, HomeProps> {
                                 </div>
                                 <div className={"col2"}>
                                     <p>
-                                        vuoi investire nel tuo futuro e nella tua passione. Hai cercato per anni
+                                        vuoi <span className={"color-red"}>investire nel tuo futuro</span> e nella tua <span className={"color-red"}>passione.</span> Hai cercato per anni
                                         un'università o una scuola per diventare interior designer ma non l'hai ancora
                                         trovata
                                     </p>
@@ -211,10 +211,10 @@ class Home extends React.Component<{}, HomeProps> {
                                 </div>
                                 <div className={"col2"}>
                                     <p>
-                                        vuoi diventare un arredatore d'interni presso studi di progettazione, o vuoi
-                                        metterti in proprio come interior designer, o se semplicemente vuoi essere in
+                                        <span className={"color-red"}>vuoi diventare un arredatore d'interni</span> presso studi di progettazione, o vuoi
+                                        metterti in proprio come <span className={"color-red"}>interior designer</span>, o se semplicemente vuoi essere in
                                         grado
-                                        di progettare da solo il design di casa tua
+                                        di <span className={"color-red"}>progettare da solo</span> il design di <span className={"color-red"}>casa tua</span>
                                     </p>
                                 </div>
                             </div>
@@ -224,7 +224,7 @@ class Home extends React.Component<{}, HomeProps> {
                                 </div>
                                 <div className={"col2"}>
                                     <p>
-                                        vuoi riuscire a posizionarti nel mercato nel migliore dei modi, distinguendoti
+                                        <span className={"color-red"}>vuoi</span> riuscire a <span className={"color-red"}>posizionarti nel mercato</span> nel migliore dei modi, distinguendoti
                                         dalla
                                         concorrenza e attraendo sempre più clienti attraverso la giusta strategia
                                     </p>
@@ -267,6 +267,7 @@ class Home extends React.Component<{}, HomeProps> {
                             image={false
                             }
                         />
+                        
                     </div>
                 </div>
 
