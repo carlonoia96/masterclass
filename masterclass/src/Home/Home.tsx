@@ -9,6 +9,7 @@ import PaymentBox from "../PaymentBox/PaymentBox";
 import {types} from "util";
 import {type} from "os";
 import PaymentBoxModel from "../PaymentBox/PaymentBox.model";
+import mobilePcIdm from "../Assets/images/mobilePcIDM.webp"
 
 
 interface HomeProps {
@@ -41,9 +42,9 @@ class Home extends React.Component<{}, HomeProps> {
 
     blockStyle(block: any) {
         if (block.open) {
-            return {fontSize: "18px"}
+            return "blockStyleClose"
         } else {
-            return {fontSize: "32px"}
+            return "blockStyleOpen"
         }
     }
 
@@ -267,20 +268,20 @@ class Home extends React.Component<{}, HomeProps> {
                             image={false
                             }
                         />
-                        
+                        <img className={"hide-not-desktop"} src={mobilePcIdm}/>
                     </div>
                 </div>
 
                 <div className={"faPerTe default-block-size"}>
                     <p className={"title"}>
-                        FA PER TE SE SEI (O ASPIRI A DIVENTARE):
+                        FA PER TE SE SEI: <br className={"hide-not-desktop"}/> (O ASPIRI A DIVENTARE)
                     </p>
                     <div className={"container"}>
 
                         {this.state.blocks.map((block: any) => (
                             <div className={"block"} onMouseEnter={() => this.clickBlock(block)}
                                  onMouseLeave={() => this.clickBlock(block)}>
-                                <p className={"text"} style={this.blockStyle(block)}>
+                                <p className={`text ${this.blockStyle(block)}`}>
                                     {this.showBlockText(block)}
                                 </p>
                                 {/*<div className={"image"}/>*/}

@@ -304,6 +304,7 @@
 .faPerTe {
   height: unset !important;
   min-height: 120vh;
+  font-size: 28px;
 }
 
 .faPerTe .title {
@@ -328,11 +329,19 @@
   text-align: center;
   color: white;
   border-radius: 30px;
-  font-size: 32px;
+  font-size: 1em;
   font-weight: bold;
   padding: 30px;
   position: relative;
   cursor: pointer;
+}
+
+.faPerTe .blockStyleOpen{
+  font-size: 1em;
+}
+
+.faPerTe .blockStyleClose{
+  font-size: .6em;
 }
 
 /*
@@ -1217,7 +1226,7 @@
   }
 
   .check .title {
-    font-size: 2em;
+    font-size: 1.8em;
     margin-top: 3.5em;
   }
 
@@ -1246,6 +1255,55 @@
   .idm .postCard {
     font-size: 16px;
     width: 16em;
+  }
+
+  .idm img{
+    height: 20em;
+    width: auto;
+    margin-top: -2em;
+    margin-bottom: 5em;
+  }
+
+  .faPerTe{
+    font-size: 16px;
+    min-height: unset;
+  }
+
+  .faPerTe .title{
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 3em;
+  }
+
+  .faPerTe .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-template-columns: unset;
+    column-gap: unset;
+    row-gap: 5em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+
+  /*.faPerTe .block,*/
+  /*.faPerTe .block p{*/
+  /*  font-size: 1.2em !important;*/
+  /*}*/
+
+  .faPerTe .block{
+    height: 13em;
+    width: 13em;
+    font-size: 1.2em;
+  }
+
+  .faPerTe .blockStyleOpen{
+    font-size: 1.2em;
+  }
+
+  .faPerTe .blockStyleClose{
+    font-size: .9em;
   }
 
 }
